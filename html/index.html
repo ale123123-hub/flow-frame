@@ -3,67 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Change the page title</title>
+    <title>The Food Ninja Blog</title>
   </head>
+
   <body>
-    <h1>Hello World<h1>
-    <p>index.html is the home page of your site</p>
+    <header>
+      <h3>Food Ninja</h3>
+      <nav>
+        <a href="index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>The Food Ninja Blog</h1>
+        <p>A blog about food, experiences, and recipes.</p>
 
-    The Food Ninja Blog
-    A blog about food, experiences, and recipes.
+        <input class="Search" type="text" id="Search" name="Search for articles" placeholder="Search for articles" /><br />
+        <span>🔍</span><br/>
 
-    Search for articles
-    🔍
-    Travel
-    Food Theory
-    Recipes
-    Restaurants
-    Replace
-    Remove
-    Travel
-    What Traveling Greece For 2 Weeks Taught Me About Life
-    Jun 21, 2021 · 11 min read
-
-    Hidden coves, ancient ruins, and meals that redefine what food means.
-
-    Replace
-    Remove
-    Food Theory
-    Why You Should Never Order 12 Chicken Nuggets and Fries
-    Aug 1, 2021 · 7 min read
-
-    The math, the science, and the dark truth behind combo meal pricing.
-
-    Replace
-    Remove
-    Recipes
-    The Perfect Homemade Ramen Broth Recipe
-    Sep 14, 2021 · 9 min read
-
-    Twelve hours of simmering and a tare that will ruin all other broths for you.
-
-    Replace
-    Remove
-    Restaurants
-    The Best Hidden Restaurants in Tokyo You Need to Visit
-    Oct 3, 2021 · 6 min read
-
-    Down unmarked alleys — the izakayas that locals keep to themselves.
-
-    Replace
-    Remove
-    Travel
-    Eating My Way Through Vietnam: A 10-Day Food Diary
-    Nov 18, 2021 · 14 min read
-
-    From banh mi carts at 6am to midnight pho in Hanoi.
-
-    Replace
-    Remove
-    Food Theory
-    Why Expensive Olive Oil Is Almost Never Worth It
-    Dec 5, 2021 · 5 min read
-
-    Blind taste tests, industry fraud, and what the label is actually telling you.
+        <button>Travel</button>
+        <button>Food Theory</button>
+        <button>Recipes</button>
+        <button>Restaurants</button><br/>
+      </section>
+        
+        <section>
+          <article class="post">
+            <img src="img/greece-travel.png" alt="Santorini, Greece" width="250px"><br/>
+            <button>Travel</button><br/>
+            <h3>What Traveling Greece For 2 Weeks Taught Me About Life</h3>
+            <p>Jun 21, 2021 · 11 min read</p>
+            <p>Hidden coves, ancient ruins, and meals that redefine what food means.</p>
+          </article>
+          <article class="post">
+            <img src="img/chicken-nuggets-fries.png", alt="Chicken nuggets and fries" width="250px"><br/>
+            <button>Food Theory</button>
+            <h3>Why You Should Never Order 12 Chicken Nuggets and Fries</h3>
+            <p>Aug 1, 2021 · 7 min read</p>
+            <p>The math, the science, and the dark truth behind combo meal pricing.</p>
+          </article>  
+          <article class="post">
+            <img src="img/ramen-broth.png" alt="Ramen broth" width="250px"><br/>
+            <button>Recipes</button>
+            <h3>The Perfect Homemade Ramen Broth Recipe</h3>
+            <p>Sep 14, 2021 · 9 min read</p>
+            <p>Twelve hours of simmering and a tare that will ruin all other broths for you.</p>
+          </article>
+          <article class="post">
+            <img src="img/tokyo-restaurants.png" alt="Tokyo" width="250px"><br/>
+            <button>Restaurants</button>
+            <h3>The Best Hidden Restaurants in Tokyo You Need to Visit</h3>
+            <p>Oct 3, 2021 · 6 min read</p>
+            <p>Down unmarked alleys — the izakayas that locals keep to themselves.</p>
+          </article>
+          <article class="post">
+            <img src="img/vietnam-food-diary.png" alt="Vietnam food" width="250px"><br/>
+            <button>Travel</button>
+            <h3>Eating My Way Through Vietnam: A 10-Day Food Diary</h3>
+            <p>Oct 3, 2021 · 6 min read</p>
+            <p>Down unmarked alleys — the izakayas that locals keep to themselves.</p>
+          </article>
+          <article class="post">
+            <img src="img/olive-oil.png" alt="Oil" width="250px"><br/>
+            <button>Food Theory</button>
+            <h3>Why Expensive Olive Oil Is Almost Never Worth It</h3>
+            <p>Dec 5, 2021 · 5 min read</p>
+            <p>Blind taste tests, industry fraud, and what the label is actually telling you.</p>
+          </article>
+      </section> 
+    </main>
   </body>
+  <footer>
+      <p>&copy; The Food Ninja Blog</p>
+    </footer>
 </html>
