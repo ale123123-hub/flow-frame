@@ -5,7 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Food Ninja Blog</title>
   </head>
-
+  <style>
+    body{
+      margin: 0;
+      margin-left: 200px;
+      background-color: rgb(231, 231, 219);
+    }
+    header{
+      align-items: center;
+      margin-top: 50px;
+      background-color: rgb(231, 231, 219);
+      border-bottom: 1px solid gray;
+    }
+    nav a{
+      text-decoration: none;
+      color: grey;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    section:first-of-type{
+      margin-top: 10px;
+      text-align: center;
+    }
+    h1{
+      color: rgb(2, 2, 77);
+      margin-bottom: 5px;
+    }
+    section:first-of-type p{
+      color: gray;
+      margin-top: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+    section button{
+      border-radius: 5px;
+      background-color: white;
+      color: gray;
+      border: 1px solid gray;
+    }
+    .Search{
+      width: 350px;
+      height: 25px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      color: rgb(174, 173, 173);
+    }
+    article{
+      margin: 10px;
+    }
+    .post{
+      background-color: white;
+      width: 350px;
+      border: 0.5px solid rgb(183, 183, 183);
+      border-radius: 10px;
+      padding: auto;
+    }
+    .post img{
+      width: 350px;
+    }
+    .post button{
+      border-radius: 5px;
+      height: 25px;
+      margin: 10px;
+      background-color: rgb(2, 2, 77);
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      text-align: center;
+    }
+    .post h3{
+      margin: 10px;
+      margin-top: 5px;
+    }
+    .post p{
+      margin: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+    .date{
+      color: rgb(163, 162, 162);
+    }
+    .text{
+      color: rgb(113, 113, 113);
+    }
+    footer{
+      margin: 0;
+      margin-left: 0;
+      background-color: rgb(231, 231, 219);
+    }
+  </style>
   <body>
     <header>
       <h3>Food Ninja</h3>
@@ -20,59 +108,80 @@
         <h1>The Food Ninja Blog</h1>
         <p>A blog about food, experiences, and recipes.</p>
 
-        <input class="Search" type="text" id="Search" name="Search for articles" placeholder="Search for articles" /><br />
-        <span>🔍</span><br/>
+        <input class="Search" type="text" id="Search" name="Search for articles" placeholder="Search for articles" />
+        <br/>
+        <span>🔍</span>
+        <br/>
 
         <button>Travel</button>
         <button>Food Theory</button>
         <button>Recipes</button>
-        <button>Restaurants</button><br/>
+        <button>Restaurants</button>
+        <br/>
       </section>
         
         <section>
           <article class="post">
-            <img src="img/greece-travel.png" alt="Santorini, Greece" width="250px"><br/>
-            <button>Travel</button><br/>
-            <h3>What Traveling Greece For 2 Weeks Taught Me About Life</h3>
-            <p>Jun 21, 2021 · 11 min read</p>
-            <p>Hidden coves, ancient ruins, and meals that redefine what food means.</p>
-          </article>
-          <article class="post">
-            <img src="img/chicken-nuggets-fries.png", alt="Chicken nuggets and fries" width="250px"><br/>
-            <button>Food Theory</button>
-            <h3>Why You Should Never Order 12 Chicken Nuggets and Fries</h3>
-            <p>Aug 1, 2021 · 7 min read</p>
-            <p>The math, the science, and the dark truth behind combo meal pricing.</p>
-          </article>  
-          <article class="post">
-            <img src="img/ramen-broth.png" alt="Ramen broth" width="250px"><br/>
-            <button>Recipes</button>
-            <h3>The Perfect Homemade Ramen Broth Recipe</h3>
-            <p>Sep 14, 2021 · 9 min read</p>
-            <p>Twelve hours of simmering and a tare that will ruin all other broths for you.</p>
-          </article>
-          <article class="post">
-            <img src="img/tokyo-restaurants.png" alt="Tokyo" width="250px"><br/>
-            <button>Restaurants</button>
-            <h3>The Best Hidden Restaurants in Tokyo You Need to Visit</h3>
-            <p>Oct 3, 2021 · 6 min read</p>
-            <p>Down unmarked alleys — the izakayas that locals keep to themselves.</p>
-          </article>
-          <article class="post">
-            <img src="img/vietnam-food-diary.png" alt="Vietnam food" width="250px"><br/>
+            <img src="img/greece-travel.png" alt="Santorini, Greece" width="250px">
+            <br/>
             <button>Travel</button>
-            <h3>Eating My Way Through Vietnam: A 10-Day Food Diary</h3>
-            <p>Oct 3, 2021 · 6 min read</p>
-            <p>Down unmarked alleys — the izakayas that locals keep to themselves.</p>
+            <br/>
+            <h3>What Traveling Greece For 2 Weeks Taught Me About Life</h3>
+            <p class="date">Jun 21, 2021 · 11 min read</p>
+            <p class="text">Hidden coves, ancient ruins, and meals that redefine what food means.</p>
           </article>
+
           <article class="post">
-            <img src="img/olive-oil.png" alt="Oil" width="250px"><br/>
+            <img src="img/chicken-nuggets-fries.png", alt="Chicken nuggets and fries" width="250px">
+            <br/>
             <button>Food Theory</button>
+            <br/>
+            <h3>Why You Should Never Order 12 Chicken Nuggets and Fries</h3>
+            <p class="date">Aug 1, 2021 · 7 min read</p>
+            <p class="text">The math, the science, and the dark truth behind combo meal pricing.</p>
+          </article> 
+
+          <article class="post">
+            <img src="img/ramen-broth.png" alt="Ramen broth" width="250px">
+            <br/>
+            <button>Recipes</button>
+            <br/>
+            <h3>The Perfect Homemade Ramen Broth Recipe</h3>
+            <p class="date">Sep 14, 2021 · 9 min read</p>
+            <p class="text">Twelve hours of simmering and a tare that will ruin all other broths for you.</p>
+          </article>
+
+          <article class="post">
+            <img src="img/tokyo-restaurants.png" alt="Tokyo" width="250px">
+            <br/>
+            <button>Restaurants</button>
+            <br/>
+            <h3>The Best Hidden Restaurants in Tokyo You Need to Visit</h3>
+            <p class="date">Oct 3, 2021 · 6 min read</p>
+            <p class="text">Down unmarked alleys — the izakayas that locals keep to themselves.</p>
+          </article>
+
+          <article class="post">
+            <img src="img/vietnam-food-diary.png" alt="Vietnam food" width="250px">
+            <br/>
+            <button>Travel</button>
+            <br/>
+            <h3>Eating My Way Through Vietnam: A 10-Day Food Diary</h3>
+            <p class="date">Oct 3, 2021 · 6 min read</p>
+            <p class="text">Down unmarked alleys — the izakayas that locals keep to themselves.</p>
+          </article>
+
+          <article class="post">
+            <img src="img/olive-oil.png" alt="Oil" width="250px">
+            <br/>
+            <button>Food Theory</button>
+            <br/>
             <h3>Why Expensive Olive Oil Is Almost Never Worth It</h3>
-            <p>Dec 5, 2021 · 5 min read</p>
-            <p>Blind taste tests, industry fraud, and what the label is actually telling you.</p>
+            <p class="date">Dec 5, 2021 · 5 min read</p>
+            <p class="text">Blind taste tests, industry fraud, and what the label is actually telling you.</p>
           </article>
       </section> 
+
     </main>
   </body>
   <footer>
