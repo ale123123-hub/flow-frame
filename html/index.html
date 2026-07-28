@@ -3,97 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleIndex.css">
     <title>The Food Ninja Blog</title>
   </head>
-  <style>
-    body{
-      margin: 0;
-      margin-left: 200px;
-      background-color: rgb(231, 231, 219);
-    }
-    header{
-      align-items: center;
-      margin-top: 50px;
-      background-color: rgb(231, 231, 219);
-      border-bottom: 1px solid gray;
-    }
-    nav a{
-      text-decoration: none;
-      color: grey;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    section:first-of-type{
-      margin-top: 10px;
-      text-align: center;
-    }
-    h1{
-      color: rgb(2, 2, 77);
-      margin-bottom: 5px;
-    }
-    section:first-of-type p{
-      color: gray;
-      margin-top: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 13px;
-    }
-    section button{
-      border-radius: 5px;
-      background-color: white;
-      color: gray;
-      border: 1px solid gray;
-    }
-    .Search{
-      width: 350px;
-      height: 25px;
-      margin: 10px;
-      border-radius: 5px;
-      border: 1px solid gray;
-      color: rgb(174, 173, 173);
-    }
-    article{
-      margin: 10px;
-    }
-    .post{
-      background-color: white;
-      width: 350px;
-      border: 0.5px solid rgb(183, 183, 183);
-      border-radius: 10px;
-      padding: auto;
-    }
-    .post img{
-      width: 350px;
-    }
-    .post button{
-      border-radius: 5px;
-      height: 25px;
-      margin: 10px;
-      background-color: rgb(2, 2, 77);
-      color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      text-align: center;
-    }
-    .post h3{
-      margin: 10px;
-      margin-top: 5px;
-    }
-    .post p{
-      margin: 10px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-    }
-    .date{
-      color: rgb(163, 162, 162);
-    }
-    .text{
-      color: rgb(113, 113, 113);
-    }
-    footer{
-      margin: 0;
-      margin-left: 0;
-      background-color: rgb(231, 231, 219);
-    }
-  </style>
   <body>
     <header>
       <h3>Food Ninja</h3>
@@ -107,16 +19,18 @@
       <section>
         <h1>The Food Ninja Blog</h1>
         <p>A blog about food, experiences, and recipes.</p>
-
+        <div class="Search-box">
         <input class="Search" type="text" id="Search" name="Search for articles" placeholder="Search for articles" />
         <br/>
-        <span>🔍</span>
+        <span class="Icon">🔍</span>
         <br/>
-
+        </div>
+        <div class="buttons">
         <button>Travel</button>
         <button>Food Theory</button>
         <button>Recipes</button>
         <button>Restaurants</button>
+        </div>
         <br/>
       </section>
         
