@@ -1,0 +1,33 @@
+
+     header,footer {
+        margin: 0;
+        padding: 20px 0;
+        background-color: #bfb2fd;
+      }
+      body {
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      h1 {
+         color: rgb(0, 0, 70);
+        font-family: "Georgia", serif;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+      }
+      h2 {
+         color: rgb(1, 1, 255);
+        font-family: "Georgia", serif;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+       p,li,d {
+         color: rgb(1, 1, 53);
+        font-family: "Georgia", serif;
+        font-size: 16px;
+        text-align: justify;
+      }
+    .padding-left-20 {
+    padding-left: 20px;
+  }
