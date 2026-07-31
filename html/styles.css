@@ -121,7 +121,16 @@ li {
   .featured {
     flex: 2;
   }
-
+  .featured img {
+    max-height: 500px;
+  }
+  .featured h3{
+     font-size: 28px;
+  
+  }
+   .featured p {
+    font-size: 22px;
+  }
   .sidebar {
     flex: 1;
     display: flex;
