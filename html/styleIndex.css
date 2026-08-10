@@ -1,23 +1,30 @@
 body{
       margin: 0;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
     }
     header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       padding: 20px;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
       border-bottom: 1px solid gray;
     }
+    nav{
+      display: flex;
+    }
     nav a{
+      margin-left: 10px;
       text-decoration: none;
       color: grey;
       font-family: Arial, Helvetica, sans-serif;
     }
     section:first-of-type{
-      margin-top: 10px;
+      margin-top: 30px;
       text-align: center;
     }
     h1{
-      color: rgb(2, 2, 77);
+      color: rgb(3, 3, 101);
       font-size: 35px;
     }
     section:first-of-type p{
@@ -28,14 +35,15 @@ body{
       font-size: 13px;
     }
     section button{
-      border-radius: 5px;
+      border-radius: 15px;
+      width:90px;
       background-color: white;
       color: gray;
       border: 1px solid gray;
     }
     .Search-box{
       position: relative;
-      width: 100%;
+      width: 70%;
       margin: 20px auto;
     }
     .Search{
@@ -59,7 +67,7 @@ body{
     }
     .post{
       background-color: white;
-      width: 100%;
+      width: auto;
       border: 0.5px solid rgb(183, 183, 183);
       border-radius: 10px;
       padding: auto;
@@ -96,16 +104,16 @@ body{
     footer{
       margin: 0;
       margin-left: 0;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
     }
 @media (min-width: 768px) {
   body{
       margin: 0;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
     }
     header{
       padding: 20px;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
       border-bottom: 1px solid gray;
     }
     nav a{
@@ -118,7 +126,7 @@ body{
       text-align: center;
     }
     h1{
-      color: rgb(2, 2, 77);
+      color: rgb(3, 3, 101);
       font-size: 35px;
     }
     section:first-of-type p{
@@ -129,7 +137,7 @@ body{
       font-size: 13px;
     }
     section button{
-      border-radius: 5px;
+      border-radius: 15px;
       background-color: white;
       color: gray;
       border: 1px solid gray;
@@ -207,6 +215,6 @@ body{
     footer{
       margin: 0;
       margin-left: 0;
-      background-color: rgb(231, 231, 219);
+      background-color: rgb(242, 242, 229);
     }
 }

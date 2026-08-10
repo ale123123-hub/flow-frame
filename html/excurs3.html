@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>     
+        .cards-container {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+        .card {
+          display:flex;
+         flex-direction: row;
+         align-items: center;
+        }
+        .card-blue i,.card-blue h2{
+            color:#3B82F6;
+
+        }
+        .card-green i,.card-green h2{
+            color:#10B981;
+
+        }
+        .card-purple i,.card-purple h2{
+            color:#8B5CF6;
+
+        }
+        .card-orange i,.card-orange h2{
+            color:#F97316;
+
+        }
+        @media (min-width: 768px) {
+  .cards-container {
+    flex-direction: row;
+    gap: 24 px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="cards-container">
+      <div class="card card-blue">
+        <i class="fa-solid fa-laptop-code"></i> 
+
+        <div>
+        <h2>Card One</h2>
+        <p>This is the first card.</p>
+        </div>
+
+      </div>
+      <div class="card card-green">
+        <i class="fa-solid fa-chart-column"></i>
+
+        <div>   
+        <h2>Card Two</h2>
+        <p>This is the second card.</p>
+        </div>
+
+      </div>
+      <div class="card card-purple">
+        <i class="fa-solid fa-user"></i>
+
+        <div>
+        <h2>Card Three</h2>
+        <p>This is the third card.</p>
+        </div>
+
+      </div>
+      <div class="card card-orange">
+        <i class="fa-solid fa-gear"></i>
+
+        <div>
+        <h2>Card Four</h2>
+        <p>This is the fourth card.</p>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
