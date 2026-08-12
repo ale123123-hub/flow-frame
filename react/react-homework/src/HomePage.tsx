@@ -1,4 +1,5 @@
 import { Stack, Container } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { articles } from './articles';
 import './index.css'
 import type { FC } from "react";
@@ -26,6 +27,25 @@ const ArticleCard:FC<ArticleProps> = ({ title, category, excerpt,  date, imageUR
 export const HomePage=() => {
     return(
         <Container>
+        <header>
+        <h3>Food Ninja</h3>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/home">Home</Link>
+            </li>
+            <li>
+              <Link to="/articles">Article</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+             <li>
+              <Link to="/about">About</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
             <h1>The Food Ninja Blog</h1>
             <p>A blog about food, experiences, and recipes.</p>
             <Stack>
