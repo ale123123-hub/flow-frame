@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
 
 const navItems = [
   { label: 'Home', path: '/home' },
@@ -10,19 +14,25 @@ const navItems = [
 
 export const Header = () => {
   return (
-    <header className="nav-header">
-      <h2 >Food Ninja</h2>
-      <nav>
-        <ul className="nav-list">
+    <AppBar position="static">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Food Ninja
+        </Typography>
+
+        <Box component="nav">
           {navItems.map((item) => (
-            <li key={item.path}>
-              <Link to={item.path} className="nav-card">
-                {item.label}
-              </Link>
-            </li>
+            <Button
+              key={item.path}
+              color="inherit"
+              component={Link}
+              to={item.path}
+            >
+              {item.label}
+            </Button>
           ))}
-        </ul>
-      </nav>
-    </header>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
