@@ -1,8 +1,10 @@
-import { Stack, Container } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Container } from '@mui/material';
+import { Header } from "./NavBar";
+
 import { articles } from './articles';
 import './index.css'
 import type { FC } from "react";
+import { HomePageSearchBar } from './HomePageSearchBar';
 
 interface ArticleProps {
   title: string;
@@ -12,55 +14,36 @@ interface ArticleProps {
   imageURL: string;
 }
 
-const ArticleCard:FC<ArticleProps> = ({ title, category, excerpt,  date, imageURL }) => {
+export const ArticleCard:FC<ArticleProps> = ({ title, category, excerpt,  date, imageURL }) => {
   return (
     <article>
         <img src={imageURL} alt={title} />
         <button>{category}</button>
-        <h3>{title}</h3>
+        <h3 style={{ color: "red"}}>{title}</h3>
         <p>{date}</p>
-        <p>{excerpt}</p>
+        <p style={{ fontStyle: "italic"}}>{excerpt}</p>
     </article>
   );
 };
 
 export const HomePage=() => {
     return(
-        <Container>
-        <header>
-        <h3>Food Ninja</h3>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/articles">Article</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-             <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-            <h1>The Food Ninja Blog</h1>
-            <p>A blog about food, experiences, and recipes.</p>
-            <Stack>
-                {articles.map((article) => (
-                    <ArticleCard
-                    key={article.title}
-                    title={article.title}
-                    category={article.category}
-                    excerpt={article.excerpt}
-                    date={article.date}
-                    imageURL={article.imageURL}
-                    />
-                ))
-                }
-            </Stack>
+        <Container 
+        sx={{
+        backgroundColor: "rgba(230, 249, 249, 0.99)",
+        maxWidth: "1500px",
+        margin: "0 auto",
+        padding: "2rem",
+      }}
+      >
+        <Header />
+
+            <h1 style={{ color: "black",  marginBottom: "20px" }}>The Food Ninja Blog</h1>
+            <p style={{ color: "black",  marginTop: "0" }}>A blog about food, experiences, and recipes.</p>
+            <HomePageSearchBar articles={articles} />
+            <footer>
+              <p>&copy; 2024 Food Ninja. All rights reserved.</p>
+            </footer>
         </Container>
     );
 };
