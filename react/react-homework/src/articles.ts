@@ -1,4 +1,12 @@
-export const articles=[
+import type { Category } from "./HomePageSearchBar";
+
+export const articles:{
+    title: string;
+    category: Category;
+    excerpt: string;
+    date: string;
+    imageURL: string;
+}[] = [
     {
         title:"What Traveling Greece For 2 Weeks Taught Me About Life",
             category:"Travel",
